@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: montserrat, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+pre {
+  color: #f6f3ed;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+:root {
+  --background-color: rgb(1, 1, 39);
+  --color11: rgb(69, 34, 34);
+  --color10: rgb(116, 86, 86);
+  --color9: rgb(46, 243, 237);
+  --color8: rgb(67, 85, 0);
+  --color7: rgb(135, 170, 0);
+  --color6: rgb(247, 190, 173);
+  --color5: rgb(135, 238, 145);
+  --color4: rgb(207, 171, 255);
+  --color3: rgb(255, 203, 5);
+  --color2: rgb(0, 136, 203);
+}
+
+/* background color */
+#about,
+#portfolio,
+#characters,
+#battle-braves,
+#tokitop {
+  background-color: var(--background-color);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 6rem;
+}
+.navbar__container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  border-bottom: 1px solid #fff;
+  height: 6rem;
+  background-color: var(--background-color);
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-around;
+  line-height: 6rem;
+  margin-right: 5rem;
+}
+.right-nav li {
+  padding: 0 10px;
+}
+
+.right-nav li:hover a,
+.intro__latest-work__content a:hover,
+section#all-game h2:hover,
+section#characters h2#view-all-character:hover {
+  color: var(--color7);
+}
+
+.navbar__logo {
+  line-height: 6rem;
+  margin-left: 5rem;
+}
+
+.navbar__logo a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.right-nav li a {
+  font-size: 1rem;
+}
+
+/* Images */
+.characters__content-image {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.characters__content-items img,
+.portfolio__container-items__img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  object-position: center;
+  /* overflow: hidden; */
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.characters__content-items:hover img,
+.portfolio__container-items__img:hover img {
+  transform: scale(1.1);
+  background: linear-gradient(to top left, rgb(207, 171, 255), rgba(0, 0, 0));
+}
+
+/* Page title heading*/
+.characters__content-items h3,
+.portfolio__container-items h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.characters__content-items p,
+.portfolio__container-items p {
+  font-size: 1.4rem;
+  padding-top: 0.6rem;
+}

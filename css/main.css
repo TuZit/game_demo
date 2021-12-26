@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: montserrat, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+pre {
+  color: #f6f3ed;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+:root {
+  --background-color: rgb(1, 1, 39);
+  --color11: rgb(69, 34, 34);
+  --color10: rgb(116, 86, 86);
+  --color9: rgb(46, 243, 237);
+  --color8: rgb(67, 85, 0);
+  --color7: rgb(135, 170, 0);
+  --color6: rgb(247, 190, 173);
+  --color5: rgb(135, 238, 145);
+  --color4: rgb(207, 171, 255);
+  --color3: rgb(255, 203, 5);
+  --color2: rgb(0, 136, 203);
+}
+
+/* background color */
+#about,
+#portfolio,
+#characters,
+#battle-braves,
+#tokitop {
+  background-color: var(--background-color);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 6rem;
+}
+
+.navbar__container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  border-bottom: 1px solid #fff;
+  height: 6rem;
+  background-color: var(--background-color);
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-around;
+  line-height: 6rem;
+  margin-right: 5rem;
+}
+.right-nav li {
+  padding: 0 10px;
+}
+.right-nav li:hover a {
+  color: var(--color7);
+}
+
+.intro__latest-work__content a:hover {
+  color: var(--color7);
+}
+
+section#all-game h2:hover, section#characters h2#view-all-character:hover {
+  color: var(--color7);
+}
+
+.navbar__logo {
+  line-height: 6rem;
+  margin-left: 5rem;
+}
+.navbar__logo a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.right-nav li a {
+  font-size: 1rem;
+}
+
+/* Images */
+.characters__content-image {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.characters__content-items img,
+.portfolio__container-items__img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  object-position: center;
+  /* overflow: hidden; */
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.characters__content-items:hover img,
+.portfolio__container-items__img:hover img {
+  transform: scale(1.1);
+  background: linear-gradient(to top left, #cfabff, black);
+}
+
+/* Page title heading*/
+.characters__content-items h3,
+.portfolio__container-items h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.characters__content-items p,
+.portfolio__container-items p {
+  font-size: 1.4rem;
+  padding-top: 0.6rem;
+}
+
+/* Description */
+.about__description__header,
+.about__description--content,
+.about__description--exp {
+  padding: 2rem 5rem;
+}
+
+.about__description h2 {
+  font-style: italic;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.about__description__header h3 {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+  padding-top: 0.6rem;
+}
+
+.about__description--content {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  overflow: hidden;
+}
+
+.about__description--content__summary {
+  flex-basis: 60%;
+  padding-top: 4rem;
+}
+.about__description--content__summary h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.about__description--content__summary p {
+  font-size: 1.1rem;
+  width: 50%;
+  padding-top: 1.6rem;
+}
+
+.about__description--content__img {
+  flex-basis: 40%;
+  /* align-self: flex-start; */
+  overflow: hidden;
+}
+.about__description--content__img img {
+  object-fit: cover;
+  object-position: 50% 10%;
+  width: 100%;
+  height: 70%;
+  border-radius: 1rem;
+}
+
+/* EDU & SKILLS */
+.about__description--exp {
+  display: flex;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.about__description--exp__edu {
+  flex-basis: 59%;
+  border-right: 1px solid #fff;
+}
+
+.about__description--exp__skills {
+  margin-left: 1rem;
+}
+
+.about__description--exp__edu h3,
+.about__description--exp__skills h3 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.about__description--exp__edu p,
+.about__description--exp__skills p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Contact */
+#contact {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#contact h3 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding-top: 0.6rem;
+}
+#contact input,
+#contact textarea,
+#contact button {
+  background-color: var(--background-color);
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  outline: none;
+  padding: 0.6rem 1rem;
+}
+#contact input:hover,
+#contact textarea:hover {
+  border-color: var(--color7);
+}
+#contact label {
+  color: #fff;
+  padding-bottom: 2.4rem;
+  width: 100%;
+}
+#contact input,
+#contact label,
+#contact textarea {
+  font-size: 1.2rem;
+  display: block;
+}
+#contact button {
+  border: 1px solid #fff;
+  transition: background 0.3s ease-in-out;
+}
+#contact button:hover {
+  background-color: var(--color7);
+}
+
+/* portfolio */
+#portfolio__title {
+  padding-top: 8rem;
+  margin-left: 5rem;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.portfolio__container {
+  padding-top: 5rem;
+}
+
+.portfolio__container-items {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.portfolio__container-items__img {
+  flex-basis: 45%;
+  /* object-fit: cover; */
+  /* height: 50vh; */
+  /* flex-grow: 1; */
+}
+.portfolio__container-items__img a {
+  display: block;
+}
+
+/* Game pages */
+/* Battle of Braves */
+.game-description {
+  display: flex;
+  padding: 3rem 5rem;
+}
+
+.game-description__items {
+  flex-basis: 50%;
+}
+.game-description__items:first-child {
+  border-right: 1px solid #fff;
+  margin-right: 2rem;
+}
+.game-description__items h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.game-description__items p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  padding-top: 0.2rem;
+  font-weight: lighter;
+}
+
+.level-design__img {
+  padding: 1.2rem 5rem;
+}
+
+.portfolio__container-items__img {
+  padding: 1rem 0;
+}
+
+.level-design__img img {
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.level-design__subtitle h3 {
+  margin-left: 5rem;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 3.2rem;
+  padding: 0.2rem 0;
+}
+
+/* pagination */
+.game-page__pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+.game-page__pagination a {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+}
+.game-page__pagination a:hover {
+  color: var(--color7);
+}
+
+.main {
+  width: 100vw;
+  background-color: #010127;
+}
+
+/* heading */
+section#heading {
+  background: url(../img/cyber_girl.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  width: 100vw;
+  padding-bottom: 10rem;
+  transition: background-image 1.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/* introduce */
+.introduce {
+  padding-left: 5rem;
+  padding-top: 8rem;
+}
+
+/* about st */
+.intro__about h3 {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+.intro__about h2 {
+  font-size: 10rem;
+  font-style: italic;
+  line-height: 1;
+  padding: 2rem 0;
+}
+.intro__about pre {
+  font-size: 1.4rem;
+  margin-left: -6.5rem;
+}
+
+/* intro product */
+.intro__latest-work {
+  display: flex;
+  gap: 4rem;
+  margin-top: 12rem;
+}
+.intro__latest-work img {
+  border-radius: 16px;
+  max-width: 330px;
+}
+
+.intro__latest-work__content h3 {
+  padding: 2rem 0 1rem;
+  font-size: 1.6rem;
+}
+.intro__latest-work__content p {
+  margin-bottom: 5rem;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+.intro__latest-work__content a {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+.intro__latest-work__content .fa-arrow-alt-circle-right {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+/* PORTFOLIO */
+section#portfolio {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 -3rem 2rem 1rem #010127;
+}
+section#portfolio h2 {
+  font-size: 3rem;
+  padding: 3rem 0;
+  color: #fff;
+  margin-left: 5rem;
+  font-style: italic;
+}
+section#project-1 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8rem;
+}
+
+/* project 1 */
+.game-project__container {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 4rem 0;
+}
+
+.game-project__container--left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  width: 100%;
+  height: 100%;
+}
+
+#project-1 .game-project__container--left h3 {
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+#project-1 .game-project__container--left p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1.4rem;
+  margin-left: 6rem;
+  text-align: center;
+}
+
+.game-project__container--right {
+  flex-basis: 80%;
+  justify-self: flex-end;
+}
+.game-project__container--right img {
+  width: 100%;
+  max-height: 660px;
+  border-radius: 20px 0 0 20px;
+}
+
+.game-project__content {
+  margin-top: 1rem;
+  margin-left: 20%;
+  width: 40%;
+}
+.game-project__content > a {
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.game-project__content i {
+  margin-left: 0.8rem;
+}
+.game-project__content > p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+.game-project__content h3 {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  font-weight: normal;
+}
+.game-project__content button {
+  background-color: #010127;
+  border: 1px solid #fff;
+  /* border-radius: 10%; */
+  padding: 1rem 4rem;
+  /* margin-top: 2.4rem; */
+}
+.game-project__content button a {
+  font-size: 1.6rem;
+}
+.game-project__content button:hover {
+  background-color: var(--color7);
+}
+
+/* All game */
+section#all-game {
+  overflow: hidden;
+}
+section#all-game h2 {
+  float: right;
+  padding: 5rem;
+  font-style: italic;
+  font-size: 4rem;
+}
+section#characters {
+  border-bottom: 1px solid #fff;
+}
+section#characters h2 {
+  font-size: 4rem;
+  font-style: italic;
+  margin-left: 5rem;
+  padding: 2rem 0;
+  width: auto;
+}
+
+/* characters */
+.characters__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10rem;
+}
+
+.characters__content-items {
+  flex-basis: 30%;
+}
+
+#all-character {
+  display: flex;
+  justify-content: flex-end;
+}
+#all-character h2:last-of-type {
+  font-style: italic;
+  font-size: 4rem;
+  width: auto;
+  padding: 5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 5rem;
+}
+.footer ul:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul:first-child li a {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.footer ul:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.footer ul:last-child li a,
+.footer ul:last-child li p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.footer ul:last-child i {
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
