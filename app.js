@@ -17,3 +17,13 @@ function autoChangeImage() {
 }
 
 setInterval(autoChangeImage, 3000);
+
+// Transparency when scroll
+let navBar = document.querySelector(".navbar__container");
+window.addEventListener("scroll", function (e) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    navBar.style.backgroundColor = " var(--background-color)";
+  } else {
+    navBar.style.backgroundColor = "transparent";
+  }
+});

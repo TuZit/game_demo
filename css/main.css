@@ -81,7 +81,7 @@ hr {
   z-index: 3;
   border-bottom: 1px solid #fff;
   height: 6rem;
-  background-color: var(--background-color);
+  background-color: transparent;
 }
 
 .right-nav {
@@ -101,7 +101,8 @@ hr {
   color: var(--color7);
 }
 
-section#all-game h2:hover, section#characters h2#view-all-character:hover {
+section#all-game h2:hover,
+section#characters h2#view-all-character:hover {
   color: var(--color7);
 }
 
