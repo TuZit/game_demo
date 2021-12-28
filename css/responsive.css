@@ -1,0 +1,167 @@
+@media screen and (max-width: 768px) {
+  .introduce {
+    padding-left: 2rem;
+  }
+
+  .navbar__logo a {
+    font-size: 2rem;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .intro__about h3 {
+    font-size: 1.6rem;
+  }
+
+  .intro__about h2 {
+    font-size: 5.4rem;
+  }
+
+  .intro__about p {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+
+  .intro__latest-work {
+    width: 80%;
+    gap: none;
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
+
+  .intro__latest-work img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 110px;
+    max-height: 100px;
+  }
+
+  .intro__latest-work__content h3 {
+    padding: 0.4rem 0;
+  }
+  .intro__latest-work__content p {
+    font-size: 1.4rem;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  /*  portfolio*/
+
+  section#portfolio {
+    box-shadow: none;
+  }
+  section#portfolio h2 {
+    padding: 1rem 0;
+  }
+
+  /* project 1 */
+  section#project-1 {
+    padding-bottom: 2.4rem;
+  }
+
+  .game-project__container {
+    padding: 0;
+    display: block;
+  }
+
+  .game-project__container--left {
+    display: none;
+  }
+
+  .game-project__container--left--respon {
+    display: block;
+  }
+
+  .game-project__container--left--respon p {
+    font-size: 1.4rem;
+    padding: 2rem 1.6rem;
+  }
+
+  .game-project__container--left--respon span:first-child {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-right: 1rem;
+  }
+
+  .game-project__container {
+    padding: 0 0 0 2rem;
+  }
+
+  .game-project__content {
+    padding: 0 0 0 2rem;
+    margin-left: 0;
+  }
+
+  .game-project__content a {
+    display: block;
+    width: 80%;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 2rem;
+  }
+
+  .game-project__content > p {
+    width: 90%;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .game-project__content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .game-project__content button {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .game-project__content button a {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  /* all game */
+  #all-game > a > h2 {
+    font-size: 2rem;
+    padding: 1.6rem 2rem 1.6rem 0;
+  }
+
+  /* characters */
+  section#characters h2 {
+    font-size: 2.4rem;
+  }
+
+  .characters__content {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+  }
+
+  .characters__content-items {
+    flex-basis: 90%;
+    margin-bottom: 2.4rem;
+  }
+
+  #all-character h2:last-of-type {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* footer */
+  .footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer ul li {
+    margin-bottom: 1rem;
+  }
+
+  .footer ul:last-child {
+    display: block;
+    margin-top: 2.4rem;
+  }
+}

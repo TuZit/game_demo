@@ -8,7 +8,6 @@ html {
   font-family: montserrat, sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
 }
 
 a {
@@ -67,7 +66,7 @@ hr {
 
 /* navbar */
 .navbar {
-  width: 100%;
+  width: auto;
   height: 6rem;
 }
 
@@ -75,6 +74,7 @@ hr {
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@ section#characters h2#view-all-character:hover {
 .characters__content-image {
   overflow: hidden;
   object-fit: cover;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 
 .characters__content-items img,
@@ -135,13 +135,11 @@ section#characters h2#view-all-character:hover {
   object-position: center;
   /* overflow: hidden; */
   object-fit: cover;
-  border-radius: 2rem;
 }
 
 .characters__content-items:hover img,
 .portfolio__container-items__img:hover img {
   transform: scale(1.1);
-  background: linear-gradient(to top left, #cfabff, black);
 }
 
 /* Page title heading*/
@@ -486,6 +484,10 @@ section#project-1 {
   height: 100%;
 }
 
+.game-project__container--left--respon {
+  display: none;
+}
+
 #project-1 .game-project__container--left h3 {
   font-size: 3rem;
   font-style: italic;
@@ -514,13 +516,12 @@ section#project-1 {
 .game-project__content {
   margin-top: 1rem;
   margin-left: 20%;
-  width: 40%;
 }
 .game-project__content > a {
   font-size: 3rem;
   font-style: italic;
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 .game-project__content i {
   margin-left: 0.8rem;
@@ -528,6 +529,7 @@ section#project-1 {
 .game-project__content > p {
   font-size: 1.2rem;
   margin: 2rem 0;
+  width: 60%;
 }
 .game-project__content h3 {
   font-size: 1.6rem;
